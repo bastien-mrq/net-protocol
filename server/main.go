@@ -56,10 +56,10 @@ func handleConnexion(conn net.Conn) {
 
 		switch typeMessage {
 		case firstType:
-			log.Info("Recived message of type 1: %s\n", string(content))
+			log.Info("Recived message of type 1: ", string(content))
 			break
 		case secondType:
-			log.Info("Recieved message of type 2 : %s\n", string(content))
+			log.Info("Recieved message of type 2 : ", string(content))
 			break
 		default:
 			log.Error("Unknown message type :", typeMessage)
